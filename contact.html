@@ -1,36 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Contact — Alish Maharjan</title>
+
     <meta
       name="description"
       content="Contact Alish Maharjan in Lalitpur, Nepal for network administration and cybersecurity roles."
     />
     <meta name="author" content="Alish Maharjan" />
+
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link href="css/styles.css" rel="stylesheet" />
   </head>
+
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
       <div class="nav-inner">
-        <a class="logo" href="index.html">Alish Maharjan<span>.</span></a>
-        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <a class="logo" href="index.html">
+          Alish Maharjan<span>.</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
           <span></span>
         </button>
+
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li>
+            <a href="contact.html" aria-current="page">Contact</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -39,73 +59,172 @@
       <section class="page-hero">
         <div class="wrap">
           <p class="eyebrow">Contact</p>
+
           <h1>Start a conversation</h1>
+
           <p class="lede">
-            The form opens your email client with the message filled in. You can also write me
-            directly.
+            Have a question or opportunity? Send me a message
+            using the form below, and I'll be happy to connect.
           </p>
         </div>
       </section>
 
       <section class="section" style="padding-top: 1rem">
         <div class="wrap contact-grid">
+
+          <!-- Direct contact information -->
           <div class="contact-card">
-            <h2 style="font-family: var(--font-display); margin-top: 0">Direct</h2>
+            <h2
+              style="font-family: var(--font-display); margin-top: 0"
+            >
+              Direct
+            </h2>
+
             <ul class="stat-list">
               <li>
                 <strong>Email</strong>
-                <span><a href="mailto:alishmaharjan90@gmail.com">alishmaharjan90@gmail.com</a></span>
+                <span>
+                  <a href="mailto:alishmaharjan90@gmail.com">
+                    alishmaharjan90@gmail.com
+                  </a>
+                </span>
               </li>
+
               <li>
                 <strong>Phone</strong>
-                <span><a href="tel:+9779762784799">+977 9762784799</a></span>
+                <span>
+                  <a href="tel:+9779762784799">
+                    +977 9762784799
+                  </a>
+                </span>
               </li>
+
               <li>
                 <strong>Location</strong>
                 <span>Lalitpur, Nepal</span>
               </li>
+
               <li>
                 <strong>LinkedIn</strong>
-                <span><a href="https://www.linkedin.com/in/alish-maharjankaizen/" target="_blank" rel="noopener noreferrer">alish-maharjankaizen</a></span>
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/alish-maharjankaizen/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    alish-maharjankaizen
+                  </a>
+                </span>
               </li>
+
               <li>
                 <strong>GitHub</strong>
-                <span><a href="https://github.com/alishmaharjan" target="_blank" rel="noopener noreferrer">alishmaharjan</a></span>
+                <span>
+                  <a
+                    href="https://github.com/alishmaharjan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    alishmaharjan
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
+
+          <!-- Contact form -->
           <div class="contact-card">
             <form class="form" id="contact-form">
-              <label>
+
+              <label for="name">
                 Full name
-                <input id="name" name="name" type="text" autocomplete="name" required />
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  maxlength="100"
+                  required
+                />
               </label>
-              <label>
+
+              <label for="email">
                 Email
-                <input id="email" name="email" type="email" autocomplete="email" required />
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  maxlength="254"
+                  required
+                />
               </label>
-              <label>
+
+              <label for="message">
                 Message
-                <textarea id="message" name="message" required></textarea>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  maxlength="512"
+                  required
+                ></textarea>
               </label>
-              <p class="form-note">Submit opens a draft email to alishmaharjan90@gmail.com. Nothing is stored on this site.</p>
-              <button class="btn btn-primary" type="submit">Open email draft</button>
+
+              <p class="form-note">
+                Your message will be submitted and stored securely
+                so I can review your inquiry.
+              </p>
+
+              <p
+                class="form-note"
+                id="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+
+              <button
+                class="btn btn-primary"
+                type="submit"
+              >
+                Send message
+              </button>
+
             </form>
           </div>
+
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
-        <div>© <span data-year></span> Alish Maharjan</div>
+        <div>
+          © <span data-year></span> Alish Maharjan
+        </div>
+
         <div class="socials">
           <a href="mailto:alishmaharjan90@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/alish-maharjankaizen/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/alishmaharjan" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+          <a
+            href="https://www.linkedin.com/in/alish-maharjankaizen/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/alishmaharjan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </footer>
+
     <script src="js/scripts.js"></script>
   </body>
 </html>
